@@ -18,9 +18,10 @@ body {
 
 .controls {
     position: absolute;
-    top: 20px;
+    top: 10px; /* Lifted upwards */
     right: 20px;
-    background: white;
+    background: #555; /* Dark grey */
+    color: white; /* White text for contrast */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -42,6 +43,22 @@ body {
     text-align: center;
     margin-bottom: 10px; /* Reduce margin */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
+    background: #eee; /* Light grey input background */
+    color: black; /* Black text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#landmark-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: #eee; /* Light grey select background */
+    color: black; /* Black text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
 }
 
 #numpad {
@@ -64,7 +81,8 @@ body {
     font-size: 1.5em; /* Reduced font size */
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    background-color: white; /* White background */
+    color: black; /* Black text */
     cursor: pointer;
     display: flex; /* Added flexbox */
     justify-content: center; /* Center horizontally */
@@ -77,11 +95,11 @@ body {
 }
 
 #numpad button:hover {
-    background-color: #e0e0e0;
+    background-color: #f0f0f0; /* Slightly darker on hover */
 }
 
 #numpad button:active {
-    background-color: #d0d0d0;
+    background-color: #e0e0e0; /* Darker on active */
 }
 
 button {
@@ -89,8 +107,8 @@ button {
     font-size: 1.5em;
     border: none;
     border-radius: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: white; /* White background */
+    color: black; /* Black text */
     cursor: pointer;
     display: flex; /* Added flexbox */
     justify-content: center; /* Center horizontally */
@@ -98,5 +116,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #f0f0f0; /* Slightly darker on hover */
 }

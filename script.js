@@ -89,6 +89,7 @@ function showLandmarkOptions(inputCoords) {
 
         const landmarkSelect = document.createElement('select');
         landmarkSelect.setAttribute('id', 'landmark-select');
+        landmarkSelect.className = 'select';
         const defaultOption = document.createElement('option');
         defaultOption.value = '';
         defaultOption.textContent = '--Choose a landmark--';

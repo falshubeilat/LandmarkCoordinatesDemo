@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oakland University Landmark Game</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <h1>Oakland University Landmark Game</h1>
+    <div id="map-container">
+        <div id="map"></div>
+        <div class="controls">
+            <div>
+                <label for="latitude-input">Latitude:</label>
+                <input type="text" id="latitude-input" readonly>
+            </div>
+            <div>
+                <label for="longitude-input">Longitude:</label>
+                <input type="text" id="longitude-input" readonly>
+            </div>
+            <div id="numpad">
+                <div class="row">
+                    <button onclick="appendNumber('1')">1</button>
+                    <button onclick="appendNumber('2')">2</button>
+                    <button onclick="appendNumber('3')">3</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendNumber('4')">4</button>
+                    <button onclick="appendNumber('5')">5</button>
+                    <button onclick="appendNumber('6')">6</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendNumber('7')">7</button>
+                    <button onclick="appendNumber('8')">8</button>
+                    <button onclick="appendNumber('9')">9</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendNumber('0')">0</button>
+                    <button onclick="appendNumber('.')">.</button>
+                    <button onclick="appendNumber('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="clearInput()">Clear</button>
+                    <button onclick="backspace()"><i class="fas fa-backspace"></i></button>
+                </div>
+            </div>
+            <button onclick="locateCoordinates()">Locate Coordinates</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
